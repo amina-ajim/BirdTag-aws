@@ -1,0 +1,102 @@
+ <!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log In • AuthService</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ─── Navbar ─────────────────────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <a href="signup.html" class="brand">MyAuthApp</a>
+    <div class="nav-links">
+      <a href="signup.html">Sign Up</a>
+      <a href="confirm.html">Confirm</a>
+      <a href="login.html">Log In</a>
+    </div>
+  </nav>
+
+  <!-- ─── Page Container ───────────────────────────────────────────────────────── -->
+  <div class="page-container">
+    <div class="form-card">
+      <h2>Welcome Back</h2>
+
+      <!-- Notification area -->
+      <div id="notification"></div>
+
+      <!-- Login Form -->
+      <form id="login-form">
+        <div class="input-group">
+          <label for="username">Username (Email)</label>
+          <input
+            type="email"
+            id="username"
+            name="username"
+            required
+            placeholder="yourname@example.com"
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            placeholder="••••••••"
+          />
+        </div>
+
+        <button type="submit">Log In</button>
+      </form>
+
+      <div class="bottom-link">
+        Don’t have an account? <a href="signup.html">Sign Up</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── JavaScript to handle login ─────────────────────────────────────────────── -->
+  <script>
+    document.getElementById("login-form").addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const notificationEl = document.getElementById("notification");
+      notificationEl.innerHTML = ""; // clear previous messages
+
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      try {
+        const response = await fetch("http://localhost:8000/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ username, password }),
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          notificationEl.innerHTML = `<div class="notification error">${
+            data.detail || "Login failed"
+          }</div>`;
+        } else {
+          // Display tokens (for demo purposes). In a real app, store them securely and redirect.
+          notificationEl.innerHTML = `<div class="notification success">
+            Login successful!<br/>
+            <strong>ID Token:</strong> ${data.id_token.substring(0, 30)}…<br/>
+            <strong>Access Token:</strong> ${data.access_token.substring(0, 30)}…<br/>
+            <strong>Expires In:</strong> ${data.expires_in} seconds
+          </div>`;
+          document.getElementById("login-form").reset();
+        }
+      } catch (err) {
+        notificationEl.innerHTML = `<div class="notification error">Network error: ${err.message}</div>`;
+      }
+    });
+  </script>
+</body>
+</html>

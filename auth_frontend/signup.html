@@ -1,0 +1,110 @@
+ <!-- signup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up • AuthService</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ─── Navbar ─────────────────────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <a href="signup.html" class="brand">MyAuthApp</a>
+    <div class="nav-links">
+      <a href="signup.html">Sign Up</a>
+      <a href="confirm.html">Confirm</a>
+      <a href="login.html">Log In</a>
+    </div>
+  </nav>
+
+  <!-- ─── Page Container ───────────────────────────────────────────────────────── -->
+  <div class="page-container">
+    <div class="form-card">
+      <h2>Create an Account</h2>
+
+      <!-- Notification area -->
+      <div id="notification"></div>
+
+      <!-- Signup Form -->
+      <form id="signup-form">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required placeholder="johndoe123" />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required placeholder="••••••••" />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="john@example.com" />
+        </div>
+
+        <div class="input-group">
+          <label for="family_name">Last Name</label>
+          <input type="text" id="family_name" name="family_name" required placeholder="Doe" />
+        </div>
+
+        <div class="input-group">
+          <label for="given_name">First Name</label>
+          <input type="text" id="given_name" name="given_name" required placeholder="John" />
+        </div>
+
+        <button type="submit">Sign Up</button>
+      </form>
+
+      <div class="bottom-link">
+        Already have an account? <a href="login.html">Log In</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── JavaScript to handle the form submission ─────────────────────────────── -->
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const notificationEl = document.getElementById('notification');
+      notificationEl.innerHTML = ''; // clear previous messages
+
+      // gather form data
+      const username    = document.getElementById('username').value.trim();
+      const password    = document.getElementById('password').value.trim();
+      const email       = document.getElementById('email').value.trim();
+      const family_name = document.getElementById('family_name').value.trim();
+      const given_name  = document.getElementById('given_name').value.trim();
+
+      // call the /signup endpoint on your FastAPI server
+      try {
+        const response = await fetch('http://localhost:8000/signup', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ username, password, email, family_name, given_name })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          // show error
+          notificationEl.innerHTML = `<div class="notification error">${data.detail || data.message}</div>`;
+        } else {
+          // success
+          notificationEl.innerHTML = `<div class="notification success">
+            ${data.message}<br />
+            <strong>Check your email for a confirmation code</strong>.
+          </div>`;
+          // Optionally, clear the form fields:
+          document.getElementById('signup-form').reset();
+        }
+      } catch (err) {
+        notificationEl.innerHTML = `<div class="notification error">Network error: ${err.message}</div>`;
+      }
+    });
+  </script>
+</body>
+</html>

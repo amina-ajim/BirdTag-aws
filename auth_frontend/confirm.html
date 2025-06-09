@@ -1,0 +1,84 @@
+ <!-- confirm.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Confirm Account • AuthService</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ─── Navbar ─────────────────────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <a href="signup.html" class="brand">MyAuthApp</a>
+    <div class="nav-links">
+      <a href="signup.html">Sign Up</a>
+      <a href="confirm.html">Confirm</a>
+      <a href="login.html">Log In</a>
+    </div>
+  </nav>
+
+  <!-- ─── Page Container ───────────────────────────────────────────────────────── -->
+  <div class="page-container">
+    <div class="form-card">
+      <h2>Confirm Your Account</h2>
+
+      <!-- Notification area -->
+      <div id="notification"></div>
+
+      <!-- Confirmation Form -->
+      <form id="confirm-form">
+        <div class="input-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required placeholder="johndoe123" />
+        </div>
+
+        <div class="input-group">
+          <label for="confirmation_code">Confirmation Code</label>
+          <input type="text" id="confirmation_code" name="confirmation_code" required placeholder="123456" />
+        </div>
+
+        <button type="submit">Confirm Account</button>
+      </form>
+
+      <div class="bottom-link">
+        Already confirmed? <a href="login.html">Log In</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ─── JavaScript to handle confirmation ─────────────────────────────────────── -->
+  <script>
+    document.getElementById('confirm-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const notificationEl = document.getElementById('notification');
+      notificationEl.innerHTML = ''; // clear previous messages
+
+      const username          = document.getElementById('username').value.trim();
+      const confirmation_code = document.getElementById('confirmation_code').value.trim();
+
+      try {
+        const response = await fetch('http://localhost:8000/confirm', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ username, confirmation_code })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok) {
+          notificationEl.innerHTML = `<div class="notification error">${data.detail || data.message}</div>`;
+        } else {
+          notificationEl.innerHTML = `<div class="notification success">
+            ${data.message} <a href="login.html">Proceed to Log In</a>.
+          </div>`;
+          document.getElementById('confirm-form').reset();
+        }
+      } catch (err) {
+        notificationEl.innerHTML = `<div class="notification error">Network error: ${err.message}</div>`;
+      }
+    });
+  </script>
+</body>
+</html>
