@@ -1,0 +1,225 @@
+ /* styles.css */
+
+/* ─── Google Font ───────────────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ─── Root Variables ───────────────────────────────────────────────────────────── */
+:root {
+  --color-primary: #5A67D8;      /* Indigo-500 */
+  --color-primary-dark: #434190; /* Indigo-700 */
+  --color-accent: #ED64A6;       /* Pink-400 */
+  --color-bg-gradient-start: #667EEA; /* Indigo-400 */
+  --color-bg-gradient-end: #764BA2;   /* Purple-600 */
+  --color-card-bg: #ffffff;
+  --color-text: #2D3748;         /* Gray-800 */
+  --color-text-light: #718096;   /* Gray-600 */
+  --color-border-radius: 0.5rem; /* 8px */
+  --transition-fast: 0.2s ease-in-out;
+  --font-family-base: 'Inter', sans-serif;
+}
+
+/* ─── Global Reset & Base Styles ───────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: var(--font-family-base);
+  color: var(--color-text);
+}
+
+/* ─── Full-Screen Gradient Background ───────────────────────────────────────────── */
+body {
+  background: linear-gradient(
+    to bottom right,
+    var(--color-bg-gradient-start),
+    var(--color-bg-gradient-end)
+  );
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── Navbar ───────────────────────────────────────────────────────────────────── */
+.navbar {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar .brand {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.navbar .nav-links a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar .nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--color-primary);
+  transition: width var(--transition-fast);
+}
+
+.navbar .nav-links a:hover::after {
+  width: 100%;
+}
+
+/* ─── Centered Container for Page Content ──────────────────────────────────────── */
+.page-container {
+  flex: 1;
+  margin-top: 4.5rem; /* Enough to clear the fixed navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* ─── Card Style Form Container ────────────────────────────────────────────────── */
+.form-card {
+  background-color: var(--color-card-bg);
+  border-radius: var(--color-border-radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  position: relative;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+/* Fade-in + slight upward motion */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ─── Form Title ───────────────────────────────────────────────────────────────── */
+.form-card h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--color-primary-dark);
+  text-align: center;
+}
+
+/* ─── Form Inputs ──────────────────────────────────────────────────────────────── */
+.form-card .input-group {
+  margin-bottom: 1rem;
+}
+
+.form-card .input-group label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.form-card .input-group input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #CBD5E0; /* Gray-300 */
+  border-radius: var(--color-border-radius);
+  font-size: 1rem;
+  transition: border-color var(--transition-fast);
+}
+
+.form-card .input-group input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+/* ─── Submit Button ───────────────────────────────────────────────────────────── */
+.form-card button {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: var(--color-border-radius);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast);
+}
+
+.form-card button:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/* ─── “Back to” Link (under form) ──────────────────────────────────────────────── */
+.form-card .bottom-link {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.form-card .bottom-link a {
+  color: var(--color-accent);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.form-card .bottom-link a:hover {
+  text-decoration: underline;
+}
+
+/* ─── Notification Box (success / error) ───────────────────────────────────────── */
+.notification {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: var(--color-border-radius);
+  font-size: 0.95rem;
+}
+
+.notification.error {
+  background-color: #FED7D7; /* Red-100 */
+  color: #C53030;            /* Red-600 */
+}
+
+.notification.success {
+  background-color: #C6F6D5; /* Green-100 */
+  color: #2F855A;            /* Green-600 */
+}
+
+/* ─── Media Queries (mobile adjustments) ───────────────────────────────────────── */
+@media (max-width: 480px) {
+  .form-card {
+    padding: 1.5rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .nav-links {
+    margin-top: 0.5rem;
+  }
+}
