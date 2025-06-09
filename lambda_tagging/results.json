@@ -1,0 +1,796 @@
+{
+  "FileKey": {
+    "S": "image_uploads/owl_1.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_owl_1.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/owl_1.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Owl": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Owl"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/myna_2.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_myna_2.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/myna_2.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Myna": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Myna"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/owl_3.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_owl_3.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/owl_3.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Owl": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Owl"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/pigeon_2.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_pigeon_2.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/pigeon_2.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Owl": {
+        "N": "2"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Owl"
+      },
+      {
+        "S": "Owl"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/crows_1.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_crows_1.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/crows_1.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Crow": {
+        "N": "2"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/peacocks_2.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_peacocks_2.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/peacocks_2.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Peacock": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Peacock"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/sparrow_2.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_sparrow_2.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/sparrow_2.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Sparrow": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Sparrow"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/kingfisher.mp4"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_kingfisher.mp4"
+  },
+  "FileType": {
+    "S": "video/mp4"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/kingfisher.mp4"
+  },
+  "TagCounts": {
+    "M": {
+      "Kingfisher": {
+        "N": "111"
+      },
+      "Sparrow": {
+        "N": "116"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Kingfisher"
+      },
+      {
+        "S": "Sparrow"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/sparrow_1.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_sparrow_1.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/sparrow_1.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Sparrow": {
+        "N": "2"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Sparrow"
+      },
+      {
+        "S": "Sparrow"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/peacocks_3.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_peacocks_3.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/peacocks_3.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Peacock": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Peacock"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/kingfisher_3.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_kingfisher_3.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/kingfisher_3.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Kingfisher": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Kingfisher"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/myna_1.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_myna_1.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/myna_1.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Myna": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Myna"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/owl_2.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_owl_2.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/owl_2.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Owl": {
+        "N": "2"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Owl"
+      },
+      {
+        "S": "Owl"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/crows.mp4"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_crows.mp4"
+  },
+  "FileType": {
+    "S": "video/mp4"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/crows.mp4"
+  },
+  "TagCounts": {
+    "M": {
+      "Crow": {
+        "N": "741"
+      },
+      "Pigeon": {
+        "N": "670"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Pigeon"
+      },
+      {
+        "S": "Crow"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/crows_2.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_crows_2.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/crows_2.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Crow": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Crow"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/myna_3.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_myna_3.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/myna_3.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Myna": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Myna"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/kingfisher_1.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_kingfisher_1.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/kingfisher_1.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Kingfisher": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Kingfisher"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/crows_4.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_crows_4.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/crows_4.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Crow": {
+        "N": "5"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/crows_3.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_crows_3.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/crows_3.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Crow": {
+        "N": "34"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      },
+      {
+        "S": "Crow"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/sparrow_3.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_sparrow_3.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/sparrow_3.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Sparrow": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Sparrow"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/peacocks_1.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_peacocks_1.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/peacocks_1.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Peacock": {
+        "N": "1"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Peacock"
+      }
+    ]
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/pigeon_1.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_pigeon_1.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/pigeon_1.jpg"
+  },
+  "TagCounts": {
+    "M": {}
+  },
+  "Tags": {
+    "L": []
+  }
+}
+
+{
+  "FileKey": {
+    "S": "image_uploads/kingfisher_2.jpg"
+  },
+  "AnnotatedURL": {
+    "S": "s3://birdtag-grp153/results/annotated_kingfisher_2.jpg"
+  },
+  "FileType": {
+    "S": "image/jpeg"
+  },
+  "OriginalURL": {
+    "S": "s3://birdtag-grp153/image_uploads/kingfisher_2.jpg"
+  },
+  "TagCounts": {
+    "M": {
+      "Kingfisher": {
+        "N": "2"
+      }
+    }
+  },
+  "Tags": {
+    "L": [
+      {
+        "S": "Kingfisher"
+      },
+      {
+        "S": "Kingfisher"
+      }
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+boto3
+opencv-python-headless
+ultralytics
+supervision
+numpy==1.23.5
+matplotlib
+requests
+librosa
+resampy
+tensorflow==2.15.1
+scikit-learn==1.6.1
+tqdm
