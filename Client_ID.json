@@ -1,0 +1,9 @@
+{
+    "aws_access_key_id": "ASIAXAX5KEAXW4ULAPVI",
+    "aws_secret_access_key": "Kv4wgnFOwqY580/BZ2ufrwzNSUh9UEl9oQMZLWU",
+    "aws_session_token": "IQoJb3JpZ2luX2VjEM3//////////wEaCXVzLXdlc3QtMiJHMEUCIDShBGNxeedu54Y5RS820uZxXXwEJrXyAm6ZP1M7hECQAiEAxnwFlz6+kcj+f8dx1TGMZxERuOR2lY2xbM4XW1HJseoqvgIIpv//////////ARACGgw0ODI2NDEzMjIwMzEiDMLVOZhvJla35vB9ryqSAu2X9swi0QzpWCS0XuxFs01hzMtNRUQ7pqGnDxdJXzEnskK1ugEkkUH/EQvNipZWj3GO+Uz2Rz4Ezn44MkdaqU0vCGe5xf3Gv5/nNF9K75SFU/cergb3FOhumObeLRbm+Ggz2S4lyLUBxFVQByAKQOG6hF0hU9BsiRUUIka3fZwPkIwZgs4E3CpPY/k1T+Ue/81JqNCUhOqosDp9Rx96a69NUfaWYz0WZtknEMbIJ8UoWjQehZ6T0W22z3K7aqTMzEBMvgHSeJvC+uHh4OBmbRN+8vBRtfCnyCAjGA0QeI3U/hyLJChYrigvNZkKhCWqO2hzDfGgfZPD9+0PzLbmLfNkkEcDRcOZYcjTgvn4VFh7EVMwrqebwgY6nQFX0Jn0dsujKsBOtKekm2MufprScbSt20r8RNbQFQDyj/ZrO0Bnfozgp0cpRnNO2ma97E20A8YWUJn96HxphNPXjOi1fHMbY5QouHXVa3tiM30YycJSIWrVMXB+XXK5BKZFAgv7UAtPNlLPBOLIZiHR4/6Wf+sxuNGVGmpu1DNLS5M/2S37SivJ1VDXL5J45b93vGwbxcIC7STDYR9s",
+    "Cognito_User_Pool_ID": "us-east-1_s6e5J6DaX",
+    "client_secret": "1cusidi866flicucqlmna6r8titnno45eefd49vjm42ed01ggme",
+    "client_id": "r24omm2cil6q1q50bjqj4pfbb",
+    "region": "us-east-1"
+}
