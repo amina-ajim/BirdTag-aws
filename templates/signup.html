@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up - BirdTag</title>
+  <title>BirdTag - Welcome</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <h2>Sign Up</h2>
+  <form action="http://localhost:8000/signup" method="post">
+    <label>Username:</label><br>
+    <input type="text" name="username" required><br>
+
+    <label>Password:</label><br>
+    <input type="password" name="password" required><br>
+
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br>
+
+    <label>First Name:</label><br>
+    <input type="text" name="given_name" required><br>
+
+    <label>Last Name:</label><br>
+    <input type="text" name="family_name" required><br><br>
+
+    <input type="submit" value="Sign Up">
+  </form>
+</body>
+<nav>
+  <a href="/signup-page">Signup</a> |
+  <a href="/login-page">Login</a> |
+  <a href="/confirm-page">Confirm</a>
+</nav>
+
+
+</html>

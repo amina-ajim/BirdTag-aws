@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BirdTag - Welcome</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <title>Confirm User - BirdTag</title>
+</head>
+<body>
+  <h2>Confirm Account</h2>
+  <form action="http://localhost:8000/confirm" method="post">
+    <label>Email (Username):</label><br>
+    <input type="email" name="email" required><br>
+
+    <label>Confirmation Code:</label><br>
+    <input type="text" name="code" required><br><br>
+
+    <input type="submit" value="Confirm">
+  </form>
+</body>
+<nav>
+  <a href="/signup-page">Signup</a> |
+  <a href="/login-page">Login</a> |
+  <a href="/confirm-page">Confirm</a>
+</nav>
+
+
+</html>
